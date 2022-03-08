@@ -91,21 +91,15 @@ If you want to display your system's current TCP/IP network configuration, type 
 
 `-ifconfig`
 
-![ifconfig](https://user-images.githubusercontent.com/61552222/139445188-daa3a2b9-59b6-4d34-ad49-3e9ee859bdc1.png)
-
 ### ping
 To send ICMP packets to one or more hosts to check connectivity, simply type:
 
 `-ping <HOST(s) IP/URL>`
 
-![ping](https://user-images.githubusercontent.com/61552222/139445220-3f01fca0-8f31-4e3d-be57-c6f08e23b30c.png)
-
 ### traceroute
 To diagnose route paths and measure transit delays, use the `-traceroute` command:
 
 `-traceroute <HOST IP/URL>`
-
-![tracert](https://user-images.githubusercontent.com/61552222/139445260-e21b3aa5-8dda-40db-8ac9-1c6f56b1c7b6.png)
 
 ### Port scans
 Scanning ports helps detect potential security breaches by identifying the hosts connected to your network and the services running.
@@ -124,8 +118,6 @@ If you wish to scan a IP range and/or port range, use one of the following comma
 
 `-scan -iprange <START IP> <END IP> -prange <START PORT> <END PORT>`
 
-![scan](https://user-images.githubusercontent.com/61552222/139445293-1cf92650-7901-45d9-9e4b-092c63c5263f.png)
-
 After this scan, it is possible to see that both 22 (SSH) and 80 (HTTP) ports are open.
 
 ### Host discovery
@@ -135,14 +127,10 @@ To look for current up devices on a given network type the following command:
 
 Then type the network you want to scan.
 
-![scanlan](https://user-images.githubusercontent.com/61552222/139445322-73759459-5737-4a1e-b47e-f91d8b483792.png)
-
 ### MAC address detection
 To get a MAC address of one or more live hosts on the LAN, use the command:
 
 `-getmac -host <HOST(s) IP>`
-
-![getmac](https://user-images.githubusercontent.com/61552222/139445353-e90ef3d4-282a-4d52-94ff-85e7c1d7f6e5.png)
 
 ### Banner grabbing
 Banner grabbing is a reconnaissance technique that retrieves a software banner information. This banner usually contains important information about a network service, including but not limited to, it’s software name and version. FTP, Web, SSH, and SMTP servers often expose vital information about the software they are running in their banner.
@@ -159,14 +147,10 @@ To perform banner grabbing, depending on your specific needs, type one of the fo
 
 `-grab -iprange <START IP> <END IP> -p <PORT(s)>`
 
-![grab](https://user-images.githubusercontent.com/61552222/139445426-c8b1bcae-318a-4c90-9dba-ab856665a683.png)
-
 ### DNS checks
 This feature is similar to the well known `nslookup` command used on UNIX systems. If you want to do a DNS check, type the following:
 
 `-ns <HOST(s) IP/URL>`
-
-![ns](https://user-images.githubusercontent.com/61552222/139445454-6e7acc6f-5078-464f-9ad6-028106b7427d.png)
 
 **Disclaimer**: Note that this feature uses IPinfo API. It is recommended to change the API key to yours as the key provided might be being used by other people. To change the API keys go to the configuration file at `files/conf.py`.
 
@@ -175,8 +159,6 @@ WHOIS is a TCP protocol that aims to consult contact and DNS.
 To request the WHOIS of one or more pages, just type:
 
 `-whois <HOST(s) IP/URL>`
-
-![whois](https://user-images.githubusercontent.com/61552222/139445488-637da57d-233b-451c-9570-feb8c2efa230.png)
 
 ### Subdomain enumeration
 Subdomain enumeration is the process of finding valid sub-domains for one or more domain.
@@ -191,15 +173,10 @@ This command uses a default wordlist to look for subdomains. However, if you wan
 
 `-sdenum <DOMAIN> -wordlist <WORDLIST PATH>`
 
-![sdenum](https://user-images.githubusercontent.com/61552222/139445516-ba9b5459-6dc3-43e1-a424-4e079486dbfd.png)
-
 ### Vulnerability reconnaissance
 To scan one or more hosts for vulnerabilities use the following command:
 
 `-vulnscan -host <HOST(s) IP/URL>`
-
-![vulnscan1](https://user-images.githubusercontent.com/61552222/139445546-bdcf7647-5b20-4ae9-a4ec-1f345e71a12f.png)
-![vulnscan2](https://user-images.githubusercontent.com/61552222/139445561-6f7c778f-3596-4a31-b598-471c961d6261.png)
 
 **Disclaimer**: Note that this feature uses Shodan API. It is recommended to change the API key to yours as the key provided might be being used by other people. To change the API keys go to the configuration file at `files/conf.py`.
 
@@ -208,8 +185,6 @@ To perform packet sniffing, type:
 
 `-sniff`
 
-![sniff](https://user-images.githubusercontent.com/61552222/139446275-7cb3f905-ac8c-4c7c-ac00-c6fb57dec1e1.png)
-
 **Disclaimer**: If you want to sniff all the data that is passing through a network, first turn your wireless card or adapter to **monitor mode**.
 
 ### MAC spoofing
@@ -217,12 +192,6 @@ MAC spoofing is the generation of frames with a MAC address different from the a
 To change the MAC address of an interface, issue the command:
 
 `-macspoof -source <SOURCE MAC> -iface <INTERFACE>`
-
-![macspoof](https://user-images.githubusercontent.com/61552222/139445629-9f10ad95-6dbb-4b7f-b0d5-93f9959e52c2.png)
-
-As you can see in the screenshot below, the MAC address of the interface was succesfully changed.
-
-![macspoof2](https://user-images.githubusercontent.com/61552222/137764297-0528c075-840b-4ef8-bf63-6a3bbd52f558.png)
 
 ### IP spoofing
 The objective of IP spoofing is to modify the correct source IP address so that the system to which a packet is directed cannot correctly identify the sender.
@@ -239,8 +208,6 @@ You can also use a random source port:
 
 `-ipspoof -source <SOURCE IP> r -target <TARGET IP/URL> <TARGET PORT>`
 
-![ipspoof](https://user-images.githubusercontent.com/61552222/139445663-09c95225-b5a8-4df0-80d2-b18b6785f804.png)
-
 **Disclaimer**: Please only use this for testing purposes and target your own machines.
 
 ### SYN flooding
@@ -254,8 +221,6 @@ To attempt SYN flooding, type:
 If you want to use a random source port, type the following command:
 
 `-synflood -source r -target <TARGET IP/URL> <TARGET PORT>`
-
-![synflood](https://user-images.githubusercontent.com/61552222/139445693-c2b25bcf-d265-4701-8480-e1f2d3b0f427.png)
 
 **Disclaimer**: Please only use this for testing purposes and target your own machines.
 ### Deauth attack
@@ -273,8 +238,6 @@ If you plan to attack all clients in a gateway, type:
 You can also choose your default wireless interface (configured in `files/conf.py`) to perform the attack:
 
 `-deauth -target <TARGET MAC> -gateway <GATEWAY MAC> -iface d`
-
-![deauth](https://user-images.githubusercontent.com/61552222/136202202-2d26efce-5b01-441f-b786-8fd2c6b416dd.png)
 
 After the command issued on the screenshot above, all the devices connected to that access point were disconnected and unable to reconnect while this script was running.
 
@@ -312,12 +275,6 @@ You can also set your interface to the default wireless interface (configured in
 
 `-mode monitor -iface d`
 
-![monitor](https://user-images.githubusercontent.com/61552222/139667598-d492fb7e-569f-4f89-b308-04e9a3eb4674.png)
-
-As you can see in the screenshot below, the interface mode was succesfully changed.
-
-![monitorproof](https://user-images.githubusercontent.com/61552222/139667620-5019489a-ad83-466e-bd36-0fa3ddbab5d4.png)
-
 However, if you wish to turn your interface back to managed mode, type:
 
 `-mode managed -iface <INTERFACE>`
@@ -325,12 +282,6 @@ However, if you wish to turn your interface back to managed mode, type:
 You can also set your interface to the default wireless interface (configured in `files/conf.py`):
 
 `-mode managed -iface d`
-
-![managed](https://user-images.githubusercontent.com/61552222/139667660-bbba8754-1226-4f30-99f7-7e83c9e28db8.png)
-
-As you can see in the screenshot below, the interface mode was succesfully changed.
-
-![managedproof](https://user-images.githubusercontent.com/61552222/139667685-b03d9820-04f7-487b-a925-4198b95479b8.png)
 
 ## Contribution
 
