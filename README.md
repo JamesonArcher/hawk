@@ -162,11 +162,13 @@ python train_mask_detector.py --dataset dataset
 After issuing this command, the terminal will continuously prompt current information about the training process including accuracy, loss, number of epoch and
 remaining time.
 
-<p align="center">
-![train](https://user-images.githubusercontent.com/100710683/173906557-148037b7-84cc-4909-ad41-d9d7b0f0632b.png") />
-</p>
+![train](https://user-images.githubusercontent.com/100710683/173906557-148037b7-84cc-4909-ad41-d9d7b0f0632b.png)
 
 After the training process is done, inside the root folder, an image file will be created containing the performance metrics of the model. Also, some metrics like precision, recall f1-score and support will be displayed in the terminal.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100710683/173906557-148037b7-84cc-4909-ad41-d9d7b0f0632b.png" />
+</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/100710683/173906842-fdc82da9-3ded-4be3-844e-b1375a9e6a28.png...">
