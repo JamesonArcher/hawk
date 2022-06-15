@@ -167,13 +167,7 @@ remaining time.
 After the training process is done, inside the root folder, an image file will be created containing the performance metrics of the model. Also, some metrics like precision, recall f1-score and support will be displayed in the terminal.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/100710683/173906557-148037b7-84cc-4909-ad41-d9d7b0f0632b.png" />
-</p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/100710683/173906842-fdc82da9-3ded-4be3-844e-b1375a9e6a28.png...">
-     …]()
-18-df6f-4498-8495-8ffa574aa492.png" />
+<img src="https://user-images.githubusercontent.com/100710683/173908293-5c0ca932-0af5-43b7-8728-d5fe388500f7.png" />
 </p>
 
 ### Face mask detection for static images
