@@ -1,5 +1,5 @@
 # python3 detect_mask_image.py --image examples/example_01.png OR python3 detect_mask_image.py -i examples/example_01.png
-# @author: Jameson Archer
+# @author: greedywind
 
 # Import used packages
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
