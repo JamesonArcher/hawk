@@ -1,5 +1,5 @@
 # python detect_mask_video.py
-# @author: Jameson Archer
+# @author: greedywind
 
 # Import the used packages
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
