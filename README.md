@@ -1,9 +1,9 @@
 # Face mask detector
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Stars](https://img.shields.io/github/stars/jamesonarcher/face-mask-detector.svg)]()
-[![Forks](https://img.shields.io/github/forks/jamesonarcher/face-mask-detector.svg)]()
-[![Size](https://img.shields.io/github/repo-size/jamesonarcher/face-mask-detector)]()
+[![Stars](https://img.shields.io/github/stars/greedywind/face-mask-detector.svg)]()
+[![Forks](https://img.shields.io/github/forks/greedywind/face-mask-detector.svg)]()
+[![Size](https://img.shields.io/github/repo-size/greedywind/face-mask-detector)]()
 [![not Mantained](http://unmaintained.tech/badge.svg)]()
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)
