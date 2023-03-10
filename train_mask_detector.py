@@ -1,7 +1,7 @@
 # python3 train_mask_detector.py --dataset dataset OR python3 train_mask_detector.py -d dataset
 # @author: greedywind
 
-# Import used packages
+# Import  packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import AveragePooling2D
