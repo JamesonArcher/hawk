@@ -1786,4 +1786,3 @@ layer {
     keep_top_k: 200
     confidence_threshold: 0.01
   }
-}
